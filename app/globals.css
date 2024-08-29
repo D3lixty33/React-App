@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+input::placeholder {
+  font-size: 12px;
+}
+
+input {
+  font-size: 12px;
+}

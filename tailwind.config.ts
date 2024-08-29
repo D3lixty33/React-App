@@ -13,6 +13,14 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      placeholder: {
+        "custom" : "8px", //this placeholder addon doesn't work cause Tailwind doesn't support placeholder font size config
+      }
+    },
+    variants: {
+      extend: {
+        placeholder: ['responsive', 'focus'],
+      }
     },
   },
   plugins: [],
