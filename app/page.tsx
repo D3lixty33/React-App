@@ -4,6 +4,7 @@ import Image from "next/image";
 import * as LoginImg from './assets/login/login.svg';
 import { Poppins } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Navbar from "./ui/navbar";
 
 
 
@@ -27,6 +28,12 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <div className={poppins.className}>
+      <Navbar
+        home="Home"
+        aboutUs="About Us"
+        newsItem = "News"
+        contactUs="Contact Us"
+      />
       <form className="flex h-screen w-screen justify-center items-center">
         <div className="flex flex-row w-9/12 bg-slate-300 border-slate-400 h-96 rounded-2xl p-8 shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px]">
           <div className="flex w-6/12 jutify-center">
