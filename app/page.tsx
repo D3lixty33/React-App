@@ -48,7 +48,7 @@ export default function Home() {
                 <input className="w-3/6 h-8 flex align-center rounded-md mt-4 bg-slate-100 text-slate-400 p-3 placeholder-slate-400 focus:outline-0 focus:shadow-[rgba(0,0,0,0.35)_0px_5px_15px]" placeholder="password"></input>
               </span>
               <div className="flex justify-center items-center">
-                <button className="flex mt-4 p-3 border-1 rounded-full w-24 bg-slate-400 text-8 h-10 text-center items-center justify-center hover:text-white hover:border-1 hover:border-black hover:bg-black"><Link href={'./pages/users'}></Link>Sign-In</button>
+                <button className="flex mt-4 p-3 border-1 rounded-full w-24 bg-slate-400 text-8 h-10 text-center items-center justify-center hover:text-white hover:border-1 hover:border-black hover:bg-black"><Link href="./pages/dashboard">Sign-In</Link></button>
               </div>
             </div>
           </div>
