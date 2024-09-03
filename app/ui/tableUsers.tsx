@@ -10,7 +10,7 @@ const statusColorMap: Record<string, ChipProps["color"]> = {
 
 type User = typeof users[0];
 
-export default function App() {
+export default function TabUsers() {
     const renderCell = React.useCallback((user: User, columnKey: React.Key) => {
         const cellValue = user[columnKey as keyof User];
 
@@ -34,7 +34,7 @@ export default function App() {
                 );
             case "status":
                 return (
-                    <Chip className="capitalize" color={statusColorMap[user.status]} size="sm" variant="flat">
+                    <Chip className="capitalize" color={statusColorMap[user.status]} size="sm" variant="flat" >
                         {cellValue}
                     </Chip>
                 );
@@ -64,8 +64,8 @@ export default function App() {
     }, []);
 
     return (
-        <Table aria-label="Example table with custom cells">
-            <TableHeader columns={columns}>
+        <Table aria-label="Example table with custom cells" className="bg-white rounded-2xl">
+            <TableHeader columns={columns} style={{marginBottom: 25, borderRadius: 25, marginTop: 52}}>
                 {(column) => (
                     <TableColumn key={column.uid} align={column.uid === "actions" ? "center" : "start"}>
                         {column.name}
@@ -75,7 +75,7 @@ export default function App() {
             <TableBody items={users}>
                 {(item) => (
                     <TableRow key={item.id}>
-                        {(columnKey) => <TableCell>{renderCell(item, columnKey)}</TableCell>}
+                        {(columnKey) => <TableCell >{renderCell(item, columnKey)}</TableCell>}
                     </TableRow>
                 )}
             </TableBody>

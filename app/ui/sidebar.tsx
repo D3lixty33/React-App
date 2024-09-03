@@ -55,37 +55,37 @@ const Sidebar: FC<navbarProps> = ({ userInfo, userIcon, navUsers, navSales, navT
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            {userInfo}
+                            <text className='font-bold'>{userInfo}</text>
                             <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                         </Button>
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            {navDeadlines}
+                            <text className='font-bold'>{navDeadlines}</text>
                             <FontAwesomeIcon icon={faCheck}></FontAwesomeIcon>
                         </Button>
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            {navUsers}
+                            <text className='font-bold'>{navUsers}</text>
                             <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
                         </Button>
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            {navSales}
+                            <text className='font-bold'>{navSales}</text>
                             <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon>
                         </Button>
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            {navTickets}
+                            <text className='font-bold'>{navTickets}</text>
                             <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
                         </Button>
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            {navInfo}
+                            <text className='font-bold'>{navInfo}</text>
                             <FontAwesomeIcon icon={faCircleInfo}></FontAwesomeIcon>
                         </Button>
                     </div>
