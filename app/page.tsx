@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div className="flex w-6/12  justify-center text-center items-center bg-purple-700 rounded-l-3xl rounded-r-2xl">
             <div className="flex flex-col w-full ml-5 font-bold ">
-              <h1 className="text-slate-200 border-1 drop-shadow-md text-5xl">LOGIN</h1>
+              <h1 className="text-slate-200 drop-shadow-md text-5xl">LOGIN</h1>
               <p className="text-sm mt-6 text-slate-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <span className="w-full justify-center flex">
                 <input className="w-3/6 h-8 flex align-center rounded-md mt-4 bg-slate-100 text-slate-400 p-3 placeholder-slate-400 focus:outline-0 focus:shadow-[rgba(0,0,0,0.35)_0px_5px_15px]" placeholder="email"></input>
