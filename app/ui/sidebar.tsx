@@ -12,6 +12,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Poppins } from "next/font/google";
+import Link from 'next/link';
 // import Image from "next/image";
 // import * as LoginImg from './assets/login/login.svg';
 
@@ -67,7 +68,7 @@ const Sidebar: FC<navbarProps> = ({ userInfo, userIcon, navUsers, navSales, navT
                     </div>
                     <div className='flex justify-center p-4'>
                         <Button fullWidth color='primary' variant='flat' radius='full'>
-                            <text className='font-bold'>{navUsers}</text>
+                            <text className='font-bold'>{navUsers}<Link href="./pages/users"></Link></text>
                             <FontAwesomeIcon icon={faUsers}></FontAwesomeIcon>
                         </Button>
                     </div>

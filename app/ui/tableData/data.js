@@ -57,6 +57,16 @@ const users = [
     avatar: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
     email: "kristen.cooper@example.com",
   },
+  {
+    id: 6,
+    name: "Jennifer Aniston",
+    role: "Engeenir",
+    team: "Tech",
+    status: "active",
+    age: "48",
+    avatar: "https://i.pravatar.cc/150?u=a092581d4ef9026700d",
+    email: "jennifer.aniston@example.com",
+  },
 ];
 
 export {columns, users};
